@@ -10,6 +10,9 @@ import SwiftUI
 struct AbsenceView: View {
     let division: Division
     var body: some View {
+        List(division.students, id: \.self.forename) { student in
+            Text("\(student.forename)")
+        }
         Text("Absence View - \(division.code)")
     }
 }
