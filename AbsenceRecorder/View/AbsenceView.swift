@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct AbsenceView: View {
+    let absence: Absence
     let division: Division
     var body: some View {
-        List(division.students, id: \.self.forename) { student in
-            AbsenceItem(forename: student.forename, isPresent: true)
+        List(absence.studentAbsences, id: \.self.student.forename) { StudentAbsence in
+            AbsenceItem(studentAbsence: StudentAbsence)
         }
         Text("Absence View - \(division.code)")
     }
@@ -19,6 +20,6 @@ struct AbsenceView: View {
 
 struct AbsenceView_Previews: PreviewProvider {
     static var previews: some View {
-        AbsenceView(division: Division.examples[0])
+        AbsenceView(absence: Absence.example)
     }
 }
