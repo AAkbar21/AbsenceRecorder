@@ -43,10 +43,10 @@ class Division: Codable {
         return division
     }
     
-    static let examples = [Division.createDivision(code: "Class 1", of: 8),
-                           Division.createDivision(code: "Class 2", of: 12),
-                           Division.createDivision(code: "Class 3", of: 20),
-                           Division.createDivision(code: "Class 4", of: 6),
+    static let examples = [Division.createDivision(code: "CmDay-5", of: 8),
+                           Division.createDivision(code: "CCOMX-1", of: 12),
+                           Division.createDivision(code: "CmPdW-3", of: 20),
+                           Division.createDivision(code: "CPhyz-3", of: 6),
                           ]
     #endif
 
