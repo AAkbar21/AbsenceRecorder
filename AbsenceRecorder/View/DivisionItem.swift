@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DivisionItem: View {
     let division: Division
-    
     var body: some View {
         HStack {
             Image(systemName: "\(division.students.count).circle")

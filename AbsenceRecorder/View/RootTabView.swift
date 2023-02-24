@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RootTabView: View {
     var body: some View {
-        TabView{
+        TabView {
             DivisionsView()
                 .tabItem {
                     Image(systemName: "square.and.pencil")
@@ -17,7 +17,7 @@ struct RootTabView: View {
                 }
             StatisticsView()
                 .tabItem {
-                    Image(systemName: "chart.xyaxis.line")
+                    Image(systemName: "chart.bar.xaxis")
                     Text("Statistics")
                 }
         }

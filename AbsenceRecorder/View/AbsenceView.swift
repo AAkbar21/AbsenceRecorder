@@ -9,12 +9,11 @@ import SwiftUI
 
 struct AbsenceView: View {
     let absence: Absence
-    let division: Division
+
     var body: some View {
-        List(absence.studentAbsences, id: \.self.student.forename) { StudentAbsence in
-            AbsenceItem(studentAbsence: StudentAbsence)
+        List(absence.studentAbsences, id: \.self.student.forename) { studentAbsence in
+            AbsenceItem(studentAbsence: studentAbsence)
         }
-        Text("Absence View - \(division.code)")
     }
 }
 
